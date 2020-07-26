@@ -148,17 +148,19 @@ header a {
 /*hero section*/
 
 .hero-section{
-    padding-bottom: 250px;
+    padding-bottom: 200px;
     padding-top: 200px;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)), url('./hero-section-pic/hero.jpg');
+    background-color: blue;
 }
 
 .hero-section .container{
 
     display: flex ;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;  
+    
 }
-
 
 .hero-section-header{ 
     font-weight: 900;
@@ -174,6 +176,7 @@ header a {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 30px;
+    color: #ffffff;
     
    }
 
@@ -238,6 +241,7 @@ header a {
 
 .our-benefits-list .our-benefits-item{
     margin-right: 30px;   
+   
 }
 
 .our-benefits-list .our-benefits-item:last-child{
@@ -298,7 +302,7 @@ padding-left: 0px;
 }
 
 /*our team*/
-    .wrapper{
+.wrapper{
     background-color: #F5F4FA;
     display: block;
 }
@@ -325,13 +329,24 @@ padding-left: 0px;
 .our-team-list {
     padding-left: 0px;
     margin-top: 0;
+  
     
+}
+
+.our-team-member,
+.our-team-position,
+.our-team-social-links{
+   text-align: center;
 }
 
 .our-team-list .our-team-member:not(:last-child){
     margin-right: 30px;
 }
 
+.our-team-member{
+    background-color: #fff;
+    border-radius: 4px;
+}
 
 .our-team-name{
     font-weight: 500;
@@ -470,6 +485,59 @@ padding-left: 0px;
 .join-us{
     display:flex;
     vertical-align: top;
+}
+.footer-social-instagram{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    background-size: 44px, 44px;
+    padding: 12px;
+}
+
+.footer-social-instagram:hover{
+    background-color: #2196F3;
+}
+
+.footer-social-twitter{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    background-size: 44px, 44px;
+    padding: 12px;
+}
+
+.footer-social-twitter:hover{
+    background-color: #2196F3;
+}
+
+.footer-social-facebook{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    background-size: 44px, 44px;
+    padding: 12px;
+}
+.footer-social-facebook:hover{
+    background-color:var(--accent-color);
+}
+
+.footer-social-linkedin{
+    background-image: url(/footer-pic/linkedin-footer.png);
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    background-size: 44px, 44px;
+    padding: 12px;
+    background-position: 50% 50%;
+    background-image: url(/footer-pic/linkedin-footer.png);
+}
+
+.footer-social-linkedin:hover{
+    background-color:var(--accent-color);
 }
 
 .footer{
