@@ -60,8 +60,12 @@ body {
     letter-spacing: 0.03em;   
 }
 
+
+.header{
+    height: 80px;
+}
 /*header without logo*/
-header a {
+.header a {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -75,6 +79,7 @@ header a {
 
  }
 
+ 
  .header .flex-container{
     display: inline-flex;
     align-content: baseline;
@@ -87,7 +92,9 @@ header a {
     margin-bottom: 0;
  }
  
-
+.portfolio-header{
+    border-bottom:  1px solid #ECECEC;
+}
  .navigation-items .link {
     display: block;
     padding-top: 32px;
@@ -109,6 +116,18 @@ header a {
 .navigation-items .link:hover,
 .navigation-items .link:focus{
     color: var(--accent-color);
+    
+}
+
+.navigation-items .link:hover::after{
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color:var(--accent-color);
+    border-radius: 2px;
+    content: "";
+    margin-bottom: 0;
+    margin-top: 29px;
 }
 
 .navigation-items a {
@@ -122,6 +141,14 @@ header a {
 .contact-info :hover,
 .contact-info :focus{ 
     color: var(--accent-color);
+}
+
+.contact-info{
+    margin-left: 305px;
+}
+
+.contact-info .contact{
+    margin-left: 10px;
 }
 
 .contact-info a{
@@ -163,10 +190,9 @@ header a {
 }
 
 .hero-section-header{ 
-    font-weight: 900;
-    width: 696px;
     font-family: Roboto;
     font-style: normal;
+    font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     /* or 136% */
@@ -174,6 +200,7 @@ header a {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
     color: #ffffff;
@@ -216,6 +243,7 @@ header a {
 
 .our-benefits{
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .our-benefits-header{
@@ -368,7 +396,13 @@ padding-left: 0px;
 }
 .our-team-social-links :hover,
 .our-team-social-links :focus{
-    color: var(--accent-color);
+    background-color: #2196F3; 
+    color:#ffffff
+}
+.our-team-social-links{
+    border-radius: 50%;
+    background-size: 44px, 44px;
+    padding: 12px;
 }
 
 .team-links{
@@ -519,21 +553,21 @@ padding-left: 0px;
     background: rgba(255, 255, 255, 0.1);
     background-size: 44px, 44px;
     padding: 12px;
+    background-position: center;
 }
 .footer-social-facebook:hover{
     background-color:var(--accent-color);
 }
 
 .footer-social-linkedin{
-    background-image: url(/footer-pic/linkedin-footer.png);
+   
     width:20px;
     height: 20px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     background-size: 44px, 44px;
     padding: 12px;
-    background-position: 50% 50%;
-    background-image: url(/footer-pic/linkedin-footer.png);
+    
 }
 
 .footer-social-linkedin:hover{
