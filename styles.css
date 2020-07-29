@@ -63,6 +63,7 @@ body {
 
 .header{
     height: 80px;
+    border-bottom: 1px solid #ECECEC;;
 }
 /*header without logo*/
 .header a {
@@ -127,7 +128,7 @@ body {
     border-radius: 2px;
     content: "";
     margin-bottom: 0;
-    margin-top: 29px;
+    margin-top: 30px;
 }
 
 .navigation-items a {
@@ -144,17 +145,21 @@ body {
 }
 
 .contact-info{
-    margin-left: 305px;
+    padding-left: 305px;
 }
 
-.contact-info .contact{
-    margin-left: 10px;
+.header-svg{
+    fill: #AFB1B8;
+    margin-right: 10px;
 }
+
 
 .contact-info a{
     color:var(--subheader-color)
 
 }
+
+
 
 
 .contact-info .contact{
@@ -164,9 +169,7 @@ body {
 
 }
 
-.contact-info .contact:first-child{
-    margin-left: 380px;
-}
+
 
 .contact-info .contact:last-child{
     margin-right: 0px;
@@ -246,6 +249,18 @@ body {
     padding-top: 94px;
 }
 
+
+
+.benefits-svg{
+    display: flex;
+    background-color: #F5F4FA;
+    width: 270px;
+    border-radius: 4px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    
+}
 .our-benefits-header{
     font-weight: bold;
     font-size: 14px;
@@ -356,9 +371,20 @@ padding-left: 0px;
 
 .our-team-list {
     padding-left: 0px;
-    margin-top: 0;
-  
-    
+    margin-top: 0;  
+}
+
+.team-svg{
+    fill: #AFB1B8;
+}
+
+
+.team-svg:hover{
+    fill: #ffffff;
+    background-color: #2196F3; 
+    padding: 12px;
+    border-radius: 50%;
+    background-size: 44px;
 }
 
 .our-team-member,
@@ -396,13 +422,16 @@ padding-left: 0px;
 }
 .our-team-social-links :hover,
 .our-team-social-links :focus{
-    background-color: #2196F3; 
-    color:#ffffff
+    
 }
-.our-team-social-links{
-    border-radius: 50%;
-    background-size: 44px, 44px;
-    padding: 12px;
+.our-team-social-links >li{
+      
+    margin-left: 10px;
+    text-align: center;
+}
+
+.our-team-social-links >li:last-child{
+    margin-left: 0;
 }
 
 .team-links{
@@ -426,7 +455,16 @@ padding-left: 0px;
 }
 
 .client-picture{
-    display: block;
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid  #AFB1B8;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-svg{
+    fill: #AFB1B8;
 }
 
 .our-clients-list .client-picture{
