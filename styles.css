@@ -461,12 +461,19 @@ padding-left: 0px;
     border: 1px solid  #AFB1B8;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
 .client-svg{
     fill: #AFB1B8;
+    
 }
 
+.link:hover,
+.client-svg:hover{
+    fill: var(--accent-color);
+
+}
 .our-clients-list .client-picture{
     margin-right: 30px;
 }
@@ -492,9 +499,7 @@ padding-left: 0px;
     text-decoration: none;
     list-style-type: none;
 }
-.client-logo:hover{
-    color: var(--accent-color);
-}
+
 /*подвал*/
 
 .footer a{
