@@ -374,19 +374,6 @@ padding-left: 0px;
     margin-top: 0;  
 }
 
-.team-svg{
-    fill: #AFB1B8;
-}
-
-
-.team-svg:hover{
-    fill: #ffffff;
-    background-color: #2196F3; 
-    padding: 12px;
-    border-radius: 50%;
-    background-size: 44px;
-}
-
 .our-team-member,
 .our-team-position,
 .our-team-social-links{
@@ -399,7 +386,8 @@ padding-left: 0px;
 
 .our-team-member{
     background-color: #fff;
-    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-name{
@@ -420,18 +408,48 @@ padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 16px;
 }
-.our-team-social-links :hover,
-.our-team-social-links :focus{
-    
-}
-.our-team-social-links >li{
+.our-team-social-links .team-links {
+    display: block;
+    background-color:#fff;  
+    border-radius: 50%;
+    background-size: 44px; 
+    padding: 12px; 
       
-    margin-left: 10px;
-    text-align: center;
+}
+
+.our-team-social-links {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    justify-content: center;
+}
+
+.team-links:hover,
+.team-links:focus{
+    background-color: #2196F3; 
+    padding: 12px;
+    border-radius: 50%;
+    background-size: 44px;
+    color: #fff;
+}
+
+.team-links:hover .class-svg,
+.team-links:focus .class-svg {
+    fill: #fff;
+}
+
+.team-svg{
+    fill: #AFB1B8;
+}
+
+/* .team-svg:hover{
+   fill:currentColor 
+} */
+.our-team-social-links >li{     
+    margin-right: 10px;
 }
 
 .our-team-social-links >li:last-child{
-    margin-left: 0;
+    margin-right: 0;
 }
 
 .team-links{
@@ -454,7 +472,12 @@ padding-left: 0px;
 
 }
 
-.client-picture{
+.client-svg{
+    fill: #AFB1B8;
+    
+}
+
+.client-link{
     display: flex;
     width: 170px;
     height: 90px;
@@ -464,14 +487,13 @@ padding-left: 0px;
     border-radius: 4px;
 }
 
-.client-svg{
-    fill: #AFB1B8;
-    
+.client-link:hover{
+    color: #2196F3;
 }
 
-.link:hover,
+
 .client-svg:hover{
-    fill: var(--accent-color);
+    fill: currentColor;
 
 }
 .our-clients-list .client-picture{
@@ -563,68 +585,12 @@ padding-left: 0px;
     display:flex;
     vertical-align: top;
 }
-.footer-social-instagram{
-    width:20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    background-size: 44px, 44px;
-    padding: 12px;
-}
-
-.footer-social-instagram:hover{
-    background-color: #2196F3;
-}
-
-.footer-social-twitter{
-    width:20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    background-size: 44px, 44px;
-    padding: 12px;
-}
-
-.footer-social-twitter:hover{
-    background-color: #2196F3;
-}
-
-.footer-social-facebook{
-    width:20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    background-size: 44px, 44px;
-    padding: 12px;
-    background-position: center;
-}
-.footer-social-facebook:hover{
-    background-color:var(--accent-color);
-}
-
-.footer-social-linkedin{
-   
-    width:20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    background-size: 44px, 44px;
-    padding: 12px;
-    
-}
-
-.footer-social-linkedin:hover{
-    background-color:var(--accent-color);
-}
 
 .footer{
     display: flex;
     
 }
-.join-us .link:hover,
-.join-us .link:focus{
-    color: var(--accent-color);
-}
+
 
 .footer-part-one  {
     margin-right: 69px;
@@ -632,10 +598,32 @@ padding-left: 0px;
     width: ;
 }
 
+.footer-social{
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 12px; 
+    display: block;
+    
 
-.join-us{
+}
+
+.footer-social:hover{
+    background-color: var(--accent-color);
+}
+
+.join-us {
     text-decoration: none;
     list-style-type: none;
+    
+}
+
+.join-us {
+    padding-left: 0;
+}
+
+.join-us >li:not(:last-child){
+   
+    padding-right: 10px;
 }
 .join-us-header{
     font-weight: bold;
@@ -696,9 +684,6 @@ padding-left: 0px;
     background-color: var(--accent-color)
 }
 
-
-
-
 .portfolio-list{
     list-style-type: none;
     display: flex;
@@ -706,6 +691,20 @@ padding-left: 0px;
     padding-left: 0px;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.portfolio-item{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    margin-top: 30px;
+}
+
+.portfolio-item:nth-child(-n + 3){
+    margin-top: 0;
+}
+
+.portfolio-item:hover{
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .pottfolio.pic{
     display:block;
