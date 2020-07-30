@@ -144,6 +144,11 @@ body {
     color: var(--accent-color);
 }
 
+.contact:hover .header-svg,
+.contact:focus .header-svg{
+    fill: var(--accent-color);
+}
+
 .contact-info{
     padding-left: 305px;
 }
@@ -159,17 +164,11 @@ body {
 
 }
 
-
-
-
 .contact-info .contact{
     margin-right: 30px;  
     padding-top: 32px;
     padding-bottom: 32px;     
-
 }
-
-
 
 .contact-info .contact:last-child{
     margin-right: 0px;
@@ -409,12 +408,27 @@ padding-left: 0px;
     margin-bottom: 16px;
 }
 .our-team-social-links .team-links {
-    display: block;
+    display: flex;
     background-color:#fff;  
     border-radius: 50%;
-    background-size: 44px; 
-    padding: 12px; 
-      
+    width: 44px;
+    height:44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-links:hover,
+.team-links:focus{
+    background-color:var(--accent-color); 
+    color: #fff;
+}
+
+.team-links:hover .team-svg,
+.team-links:focus .team-svg {
+    fill: #FFFFFF
+}
+.team-svg{
+    fill: #AFB1B8;
 }
 
 .our-team-social-links {
@@ -423,22 +437,10 @@ padding-left: 0px;
     justify-content: center;
 }
 
-.team-links:hover,
-.team-links:focus{
-    background-color: #2196F3; 
-    padding: 12px;
-    border-radius: 50%;
-    background-size: 44px;
-    color: #fff;
-}
 
-.team-svg{
-    fill: #AFB1B8;
-}
-
-.team-svg:hover{
-   fill:currentColor 
-}
+/* .team-svg:hover{
+   fill:#fff;
+} */
 .our-team-social-links >li{     
     margin-right: 10px;
 }
@@ -474,6 +476,7 @@ padding-left: 0px;
 
 .client-link{
     display: flex;
+    background-color: #fff;
     width: 170px;
     height: 90px;
     border: 1px solid  #AFB1B8;
@@ -483,14 +486,17 @@ padding-left: 0px;
 }
 
 .client-link:hover{
-    color: #2196F3;
+    background-color: #fff;
+    border: 1px solid #2196F3;
+
+}
+
+.client-link:hover .client-svg{
+    fill: #2196F3;
 }
 
 
-.client-svg:hover{
-    fill: currentColor;
 
-}
 .our-clients-list .client-picture{
     margin-right: 30px;
 }
@@ -676,7 +682,8 @@ padding-left: 0px;
 
 .btn-list:hover{
     color: #fff;
-    background-color: var(--accent-color)
+    background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-list{
@@ -727,6 +734,7 @@ padding-left: 0px;
     letter-spacing: 0.03em;
     margin-top: 20px;
     margin-bottom: 8px;
+    padding-left: 24px;
 }
 .portfolio-list-description{
     font-weight: normal;
@@ -736,6 +744,7 @@ padding-left: 0px;
     letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 20px;
+    padding-left: 24px;
 }
 
 
