@@ -432,18 +432,13 @@ padding-left: 0px;
     color: #fff;
 }
 
-.team-links:hover .class-svg,
-.team-links:focus .class-svg {
-    fill: #fff;
-}
-
 .team-svg{
     fill: #AFB1B8;
 }
 
-/* .team-svg:hover{
+.team-svg:hover{
    fill:currentColor 
-} */
+}
 .our-team-social-links >li{     
     margin-right: 10px;
 }
@@ -704,6 +699,7 @@ padding-left: 0px;
 }
 
 .portfolio-item:hover{
+    border: 1px solid #EEEEEE;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .pottfolio.pic{
